@@ -11,7 +11,7 @@ var requireModules = [
     'layer',
     'request',
     'form-util',
-    'seekers-api',
+    'reg-user-api',
     'table-util',
     'btns',
     'authority',
@@ -32,7 +32,7 @@ layui.use(requireModules, function (
     layer,
     request,
     formUtil,
-    seekersApi,
+    regUserApi,
     tableUtil,
     btns,
     authority,
@@ -57,7 +57,7 @@ layui.use(requireModules, function (
             return $table.render({
                 elem: '#seekers-list'
                 , height: 'full-100'
-                , url: seekersApi.getUrl('userList').url
+                , url: regUserApi.getUrl('userList').url
                 , method: 'post'
                 , page: true //开启分页
                 , limits: [10, 50, 100, 200]
